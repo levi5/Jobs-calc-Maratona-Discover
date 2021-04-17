@@ -45,7 +45,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 --- 
 
 ## :rocket: Instalação & Execução
-Para execução do projeto existem duas formas. A primeira é utilizando o docker para geração de todo ambiente e configuração.
+Para execução do projeto existem duas formas. A primeira é utilizando o docker e docker-compose para geração de todo ambiente e configuração.
 Basta fazer download do projeto no github.
 ```bash
 > git clone https://github.com/levi5/Jobs-calc-Maratona-Discover.git
@@ -55,12 +55,12 @@ em seguida execute os comandos do docker no terminal:
 >  docker-compose up
 ```
 A segunda forma necessita o download do Node e do banco de dados PostgreSql, além de toda configuração de conexões no arquivo .env.  
-Após o download do projeto dentro da pasta execute o seguinte comando no terminal:
+Após o download do projeto, dentro da pasta, execute o seguinte comando no terminal:
 
 ```bash
 >  npm install
 ```
-O próximo comando irá instalar todas dependências do projeto, mas não o banco de dados. Com o banco de dados instalado e configurado execute o próximo comando:
+O próximo comando acima irá instalar todas dependências do projeto, mas não o banco de dados. Com o banco de dados instalado e configurado execute os próximos comandos:
 
 ```bash
 >  npm run db:init
