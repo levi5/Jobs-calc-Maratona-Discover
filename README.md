@@ -52,7 +52,10 @@ Basta fazer download do projeto no github.
 ```
 em seguida execute o comando do docker no terminal:
 ```bash
->  docker-compose up -b --build
+>  docker-compose up -d db
+```
+```bash
+>  docker-compose up app
 ```
 A segunda forma necessita o download do Node e do banco de dados PostgreSql, além de toda configuração de conexões no arquivo .env.  
 Após o download do projeto dentro da pasta execute o seguinte comando no terminal:
