@@ -50,7 +50,7 @@ Basta fazer download do projeto no github.
 ```bash
 > git clone https://github.com/levi5/Jobs-calc-Maratona-Discover.git
 ```
-em seguida execute o comando do docker no terminal:
+em seguida execute os comandos do docker no terminal:
 ```bash
 >  docker-compose up -d db
 ```
