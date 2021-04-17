@@ -2,12 +2,8 @@
 ---
 <div align="center">
   <h3>
-    <a href="">
+    <a href="https://github.com/levi5/Jobs-calc-Maratona-Discover">
       Projeto
-    </a>
-	<span> | </span>
-    <a href="https://frontend-mentor-rock-paper-scissors-chi.vercel.app">
-      WEB
     </a>
   </h3>
 </div>
@@ -52,7 +48,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Para execução do projeto existem duas formas. A primeira é utilizando o docker para geração de todo ambiente e configuração.
 Basta fazer download do projeto no github.
 ```bash
-> git clone https://github.com/levi5/electron-file-manager.git
+> git clone https://github.com/levi5/Jobs-calc-Maratona-Discover.git
 ```
 em seguida execute o comando do docker no terminal:
 ```bash
