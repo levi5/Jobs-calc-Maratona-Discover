@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/pages/index.css" />
+  <link rel="stylesheet" href="/styles/pages/login.css">
+  <link rel="stylesheet" href="/styles/partials/form-login.css" />
+  <link rel="stylesheet" href="/styles/partials/menu-bugger.css" />
+  <title>JobsCalc - Cadastro</title>
+</head>
+
+<body>
+  <%- include('parts/headers/page-home.ejs', {page:"signin"}) %>
+    <main class="alignment-center">
+
+      <form id="form-login" class="form-login show" action="/login/signin" method="POST">
+
+        <h1 class="sign-title">Login</h1>
+        <%- include('parts/login/input/group-email.ejs') %>
+          <%- include('parts/login/input/group-password.ejs') %>
+          
+          <% if (!data.valid) {%>
+            <h3><%= data.error %></h3>
+          <%  }%>
+            <div class="sign-footer flex">
+              <button type="submit"  class="sign-button">Entrar</button>
+            </div>
+      </form>
+    </main>
+    <script src="/scripts/login.js"></script>
+    <script src="/scripts/menu-bugger.js"></script>
+   
+</body>
+
+</html>

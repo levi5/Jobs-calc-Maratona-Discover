@@ -1,0 +1,34 @@
+#menu-bugger {
+    padding: 1rem;
+    display: none;
+    flex-direction: column;
+}
+
+.one,
+.two,
+.three {
+    width: 30px;
+    height: 4px;
+    margin-bottom: 5px;
+    background: #FFF;
+    transition: all 700ms ease-in-out;
+    z-index: 8;
+}
+
+.one.active {
+    transform: rotate(-40deg) translate(1px, 10px);
+}
+
+.two.active {
+    opacity: 0;
+}
+
+.three.active {
+    transform: rotate(40deg) translate(-1px, -12px);
+}
+
+@media(max-width: 670px) {
+    #menu-bugger {
+        display: flex;
+    }
+}

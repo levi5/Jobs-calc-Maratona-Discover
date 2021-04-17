@@ -1,0 +1,31 @@
+<header>
+    <nav>
+        <span class="flex">
+            <div>
+                <h2 class="sr-only">Homepage</h2>
+                <img id="logo" src="/images/logo.svg" alt="Logo" />
+            </div>
+        </span>
+        <span id="menu-nav">
+            <a class="<%= page ==="home" ? "active" : "" %>" href="/">Home</a>
+            <a class="<%= page ==="signin" ? "active" : "" %>" href="/login/signin">Entrar</a>
+            <a class="<%= page ==="signup" ? "active" : "" %>" href="/login/signup">Cadastrar</a>
+        </span>
+
+        <div id="menu-bugger">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+
+        </div>
+
+    </nav>
+</header>
+
+<div id="menu-bugger-content" class="alignment-center">
+    <nav class="flex-direction-column">
+        <a class="<%= page ==="home" ? "active" : "" %>" href="/">Home</a>
+        <a class="<%= page ==="signin" ? "active" : "" %>" href="/login/signin">Entrar</a>
+        <a class="<%= page ==="signup" ? "active" : "" %>" href="/login/signup">Cadastrar</a>
+    </nav>
+</div>
