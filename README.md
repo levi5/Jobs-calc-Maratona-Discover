@@ -52,10 +52,7 @@ Basta fazer download do projeto no github.
 ```
 em seguida execute os comandos do docker no terminal:
 ```bash
->  docker-compose up -d db
-```
-```bash
->  docker-compose up app
+>  docker-compose up
 ```
 A segunda forma necessita o download do Node e do banco de dados PostgreSql, além de toda configuração de conexões no arquivo .env.  
 Após o download do projeto dentro da pasta execute o seguinte comando no terminal:
@@ -64,6 +61,10 @@ Após o download do projeto dentro da pasta execute o seguinte comando no termin
 >  npm install
 ```
 O próximo comando irá instalar todas dependências do projeto, mas não o banco de dados. Com o banco de dados instalado e configurado execute o próximo comando:
+
+```bash
+>  npm run db:init
+```
 
 ```bash
 >  npm run start

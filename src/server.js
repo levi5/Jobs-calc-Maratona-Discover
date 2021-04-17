@@ -4,7 +4,6 @@ import { join, resolve } from 'path'
 import dotenv from 'dotenv'
 import route from "./router/routes.js"
 
-import './db/init.js'
 
 dotenv.config()
 const __dirname = resolve()
